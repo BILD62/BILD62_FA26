@@ -58,12 +58,12 @@ def plot_channel_comparison(eeg=None, time=None):
     
     ax[0].plot(time, np.mean(eeg, axis=0))
     ax[0].set_title('Mean signal in good channels')
-    ax[0].set_ylabel('Signal ($\\mu V$)')
+    ax[0].set_ylabel('Signal ($\mu V$)')
     ax[0].set_xlabel('Time (s)')
     
     ax[1].plot(time, np.mean(eeg_bad, axis=0))
     ax[1].set_title('Mean signal in bad channels')
-    ax[1].set_ylabel('Signal ($\\mu V$)')
+    ax[1].set_ylabel('Signal ($\mu V$)')
     ax[1].set_xlabel('Time (s)')
     fig.tight_layout()
     plt.show()
